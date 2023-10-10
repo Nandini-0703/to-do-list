@@ -1,0 +1,28 @@
+.heading{
+    background-color:aqua;
+    display: inline-block;
+    }
+
+input:checked+p{
+    text-decoration:line-through;
+    text-decoration-color: red;
+}
+
+p{
+    display:inline-block;
+}
+
+body{
+    text-align : center;
+    background-color: #E4E9FD;
+     min-height: 1000px;
+    font-family: 'helvetica neue';
+    }
+
+
+
+
+
+
+
+

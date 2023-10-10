@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>to-do-list</title>
+   
+</head>
+<body>
+    <div class = "todo">
+    <div class="heading">
+    <h1> <%=kindofday%></h1>
+</div>
+         
+
+<div class="item">
+        <% for(i = 0 ; i < currentitem.length ; i++){ %>
+            <div class="box">
+                <input type="checkbox" id= "myCheck"  onclick = "myfunction()">   
+            <p id="text">  <%= currentitem[i] %> </p>
+            </div>
+       <% } %>
+
+        <form  class = "box" action="/" method="post">
+        <input type="text" name="newitem" autocomplete="off" >
+        <button type="submit">+</button>
+        </form>
+
+</div>
+
+</div>
+    
+</body>
+</html>
